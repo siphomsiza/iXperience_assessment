@@ -50,14 +50,14 @@ class UsersController < ApplicationController
 
   def save_sign_up_step_one
     if @user.save
-      redirect_to  user_next_path(@user)
+      redirect_to  next_user_path(@user)
     end
   end
 
   def save_sign_up_step_two
     if @user.save
       flash[:notice] = "User successfully created."
-      redirect_to user_done_path(@user)
+      redirect_to done_user_path(@user)
     end
   end
 

@@ -10,14 +10,14 @@ RSpec.describe UsersController, :type => :controller do
     end
   end
 
-  # describe "GET next" do
-  #   let(:subject) {create(:sign_up_step_one)}
-  #   it "returns http success" do
-  #     params = {:id => subject.id}
-  #     get  user_path(params)
-  #     expect(response).to be_successful
-  #   end
-  # end
+  describe "GET next" do
+    let(:subject) {create(:sign_up_step_one)}
+    it "returns http success" do
+      par = {:id => subject.id}
+      get :next
+      expect(response).to be_successful
+    end
+  end
 
   # describe "GET done" do
   #   it "returns http success" do
