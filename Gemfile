@@ -46,7 +46,8 @@ group :development, :test do
   # Easily generate fake data (https://github.com/stympy/faker)
   gem 'faker'
   # RSpec for Rails (http://github.com/rspec/rspec-rails)
-  gem 'rspec-rails', '~> 5.0.0'
+  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: "4-0-maintenance"
+
   gem 'thin'
   gem 'pry'
   gem 'traceroute'
