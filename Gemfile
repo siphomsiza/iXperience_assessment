@@ -7,8 +7,6 @@ gem 'active_type','~> 1.6.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'rake', '13.0.3'
