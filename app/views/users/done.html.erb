@@ -1,0 +1,26 @@
+
+<div class="fieldset">
+  <h4>
+    User Basic info 
+  </h4>
+  <dl>
+    <dt><span class="label label-info">First Name</span></dt>
+    <dd class="well"><%= @user.first_name%></dd>
+
+    <dt><span class="label label-info">Last Name</span></dt>
+    <dd class="well"><%= @user.last_name%></dd>
+
+    <dt><span class="label label-info">Email</span></dt>
+    <dd class="well"><%= @user.email%></dd>
+
+    <dt><span class="label label-info">Birthday</span></dt>
+    <dd class="well"><%= birthday_format @user.birthday %></dd>
+
+    <dt><span class="label label-info">Gender</span></dt>
+    <dd class="well"><%= @user.gender %></dd>
+
+    <dt><span class="label label-info">University</span></dt>
+    <dd class="well"><%= @user.university %></dd>
+
+  </dl>
+</div>
